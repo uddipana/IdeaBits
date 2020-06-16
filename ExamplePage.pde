@@ -91,10 +91,10 @@ class ExamplePage
     c = CC*b/DD + EE*a/FF;
     println(g);
 
-    //Back Button
+    //Render Back Button
     backButton = new ImageButton(g, g/3, 4*f/5, 4*f/5, loadImage("icons\\back1.png"), loadImage("icons\\back2.png"));
 
-    //Tab Buttons
+    //Render Tab Buttons
     Xa = constants.epHeaderPosX-constants.windowWidth/5.5;
     Wa = constants.windowWidth/5.5;
     Ha = constants.defaultButtonHeight;
@@ -103,8 +103,7 @@ class ExamplePage
     tabButton_1.defaultColor = constants.background;
     tabButton_2.defaultColor = constants.background;
 
-    //Radio buttons
-    
+    //Render Radio buttons    
     menuRadio = new RadioButton(g, g/3+f+g/2+f+g/2, constants.radioButtonWidth, f, 3);
     menuRadio.setButtonText(0, "Video");
     menuRadio.setButtonText(1, "Image");

@@ -38,14 +38,18 @@ void setup() {
   size(1920,1135);
   //fullScreen();                       //For Full Screen view
 
-  //Font setting for all
+  //Font setting
   textFont(constants.font_regular);
   
-  //For Arduino
+  //============================================================
+  //---------------------- Arduino Setup -----------------------
+  //============================================================
   try {
     for(String temp : Serial.list())
       println(temp);
-    portName = Serial.list()[1]; //change the 0 to a 1 or 2 etc. to match your port
+      
+    portName = Serial.list()[1]; //TODO change the 0 to a 1 or 2 etc. to match your port
+    
     myPort = new Serial(this, portName, 9600);    // Create object from Serial class
     isArduinoActive = true;        //if port is available then mark Arduino as Active
   } 
@@ -68,17 +72,7 @@ void setup() {
     loadingFirstTime = false;
   }
   
-  //====================================================
-  //int X=10,Y=10,W=40, H=40;
-  //for(int i=0; i<5; i++){
-  //  btn[i] = new TextButton(X,Y,W,H,Integer.toString(i));
-  //  X=X+W+5;
-  //}
-  //isArduinoActive = true;
-  //----------------------------------------------------
-  
-  
-  //Writing log to a file
+  //Writing log to a file as output
   outFile = createWriter("output\\Research_Output_"+year()+"_"+month()+"_"+day()+"_"+hour()+"_"+minute()+"_"+second()+".csv"); 
   timeTracker = millis();
   
