@@ -41,7 +41,7 @@ class ExamplePage
     float Ya = constants.windowHeight/12;
     float Wa, Ha;
 
-    //Example page interface    //TODO - change positions and Size of elements on interface appropriately
+    //Example page interface    //TODO - change positions and Size of elements on interface appropriately. Remove hardcoded values.
 
     float a, b, c, d, e, f, g, h, i, j;
     float A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, BB, CC, DD, EE, FF;

@@ -79,7 +79,7 @@ void setup() {
   
   
   //Writing log to a file
-  outFile = createWriter("Research_Output_"+year()+"_"+month()+"_"+day()+"_"+hour()+"_"+minute()+"_"+second()+".csv"); 
+  outFile = createWriter("output\\Research_Output_"+year()+"_"+month()+"_"+day()+"_"+hour()+"_"+minute()+"_"+second()+".csv"); 
   timeTracker = millis();
   
   writeTimeStamp();

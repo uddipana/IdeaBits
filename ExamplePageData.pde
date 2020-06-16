@@ -71,7 +71,7 @@ class ExamplePageData {
         formHotSpotObject(ep.videoHotSpots, 1, A10);
         formHotSpotObject(ep.videoHotSpots, 2, B10);
 
-        //For Photo Viewer - load photos  *** Can use for-loop
+        //For Photo Viewer - load photos  // TODO - Can use for-loop on File.list() if images are maintained in corresponding folders. 
         ep.photoViewerImgArray.add(requestImage("Bend2Ia.JPG"));
         ep.photoViewerDetailArray.add("Figure 1: The prototype.");
         ep.photoViewerImgArray.add(requestImage("Bend2Ib.JPG"));

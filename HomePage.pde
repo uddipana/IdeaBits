@@ -25,50 +25,7 @@ class HomePage
       //print("loading homepage data\n");
     }
 
-    //a = constants.windowWidth;
-    //b = constants.windowHeight;
-    //c = 3*(25*a - 8*b)/289;
-    //d = 9*c/16;
-    //e = (3*a-13*c)/24;
-    //f = 4*e;
-    //g = 4*e;
-    //h = 8*e;
-    //i = 2*c/3;
-    //j = 37*c/12 - 5*a/8;
-
-    //A=
-    //B=
-    //C=
-    //D=
-    //E=
-    //F=
-    //G=
-    //H=
-    //I=
-    //J=
-    //K=
-    //L=
-    //M=
-    //N=
-    //O=
-    //P=
-    //Q=
-    //R=
-    //S=
-    //T=
-    //U=
-    //V=
-    //W=
-    //X=
-    //Y=
-    //Z=
-    //AA=
-    //BB=
-    //CC=
-    //DD=
-    //EE=
-    //FF=
-
+    
     A=-2961;
     B=8699;
     C=40149;
@@ -113,8 +70,6 @@ class HomePage
     d = Y*b/Z + AA*a/BB;
     c = CC*b/DD + EE*a/FF;
 
-
-    //println("a="+a+"\tb="+b+"\tc="+c+"\td="+d+"\te="+e+"\tf="+f+"\tg="+g+"\th="+h+"\ti="+i+"\tj="+j);
 
     float x_offset, y_offset = 1.5*g + h;   //Y coordinate of the frames in first line
     frame[0] = new Frame (g, y_offset, c, d, f, e, constants.bend, img[0], mov[0]);
